@@ -87,11 +87,11 @@ if(require.main == module) {
     {           
         rest.get(program.url).on('complete', function(result) {   
                                                               // save html to the file
-            fs.writeFile('web.html',result);                                                      
+            fs.writeFile('index.html',result);                                                      
         }
                                 )              
 
-        var checkJson = checkHtmlFile('web.html', program.checks);          
+        var checkJson = checkHtmlFile('index.html', program.checks);          
     }
     
     var outJson = JSON.stringify(checkJson, null, 4);
